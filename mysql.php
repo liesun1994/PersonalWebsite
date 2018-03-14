@@ -2,7 +2,7 @@
 header("content-type:text/html;charset=utf-8");
 
 function DBOpen(){
-	$link = @mysql_connect("localhost:3306","root","sniper941010") or die("数据库连接错误".mysql_error());
+	$link = @mysql_connect("localhost:3306","root","***") or die("数据库连接错误".mysql_error());
 	$res=@mysql_select_db("liesun",$link) or die("数据库连接错误2".mysql_error());
 	mysql_query("set names utf-8");
 }
